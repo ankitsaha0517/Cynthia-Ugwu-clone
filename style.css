@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'General sans';
+    src: url(./font/GeneralSans-Regular.otf) format('opentype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: "General sans";
+    src: url(./font/GeneralSans-Medium.otf) format('opentype');
+    font-weight: bold;
+}
 *{ 
     margin: 0;
     padding: 0;
