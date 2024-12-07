@@ -6,7 +6,7 @@
 @font-face {
     font-family: "General sans";
     src: url(./font/GeneralSans-Medium.otf) format('opentype');
-    font-weight: bold;
+    font-weight:bold;
 }
 *{ 
     margin: 0;
@@ -65,8 +65,14 @@ nav a{
     color: #fff;
     font-size:18px;
 }
+.hero{
+    display: flex ;
+    height: 95%;
+    flex-direction: column;
+    justify-content: space-between;
+}
 #heading{
-    margin-top: 100px;
+    margin-top: 15vh;
 }
 #heading h1{
     font-size:9vw;
@@ -86,11 +92,11 @@ nav a{
 }
 #heading h5{
     font-size: 1.2vw;
-    margin-top: 9px;
+    margin-top: 1vh;
 }
 #second-heading{
     font-size: 1.5vw;
-    margin-top: 110px;
+    /* margin-top: 10vh; */
     text-transform: uppercase;
     line-height: 2;
     display: flex;
@@ -100,9 +106,6 @@ nav a{
 
 #home-footer{
     width: 94.9%;
-    position: absolute;
-    bottom: 3%;
-    /* background-color: red; */
     display: flex;
     justify-content: space-between;
     font-weight: 700;
@@ -113,7 +116,7 @@ nav a{
 }
 #down-arrow{
     display: flex;
-    gap: 2px;
+    gap: 0.8vw;
 }
 
 .circle{
@@ -121,8 +124,8 @@ nav a{
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    height:30px;
-    width: 30px;
+    height:2vw;
+    width: 2vw;
     background-color: white;
     color: #000;
 }
@@ -130,8 +133,8 @@ nav a{
 #menu{
     width: 100%;
     height: 100vh;
-    padding: 20px 40px;
-    padding-top: 130px;
+    padding: 3vw 5vw;
+    padding-top: 11vw;
 }
 .elem{
 
@@ -173,7 +176,7 @@ nav a{
     padding-left: 40vw;
     display: flex;
     align-items: center;
-    gap:50px;
+    gap:2vw;
 }
 #imgabout img{
     height: 20vw;
@@ -198,22 +201,23 @@ nav a{
     border: 2px solid #fff;
     padding:7px 15px;
     border-radius: 40px;
+    width: fit-content;
 }
 #subscribe{
-    padding: 20px 40px;
-    padding-bottom:7vw ;
+    padding: 2vw 4vw;
+    padding-bottom:5vw ;
 }
 #subscribe h5{
     opacity: .6;
 }
 #subscribe h3{
     font-size: 1vw;
-    margin-top: 10px;
+    margin-top: 0.8vw;
 }
 
 #foter{
     width: 100%;
-    padding: 20px 40px;
+    padding: 2vw 4vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -221,16 +225,105 @@ nav a{
 #foter #leftfooter{
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 4vw;
 }
 #rightfooter{
     display: flex;
-    gap: 40px;
+    gap: 4vw;
 }
 #rightfooter a{
     text-decoration: none;
     color: #fff;
-    font-size: 18px;
     text-transform: uppercase;
     font-weight: 900;
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        width: 100vw;
+    }
+    #home{
+        padding: 3vw;
+    }
+    #home-footer{
+        flex-direction: column;
+        gap: 1vw;
+        line-height:1.2;
+        font-size:4.2vw
+    }
+    .circle{
+        width: 5vw;
+        height: 5vw;
+        font-size: 3.5vw;
+    }
+    #heading h1{
+        font-size:15vw;
+    }
+    #second-heading{
+        font-size: 4vw;
+        font-weight: 500;
+        line-height:1.4;
+    }
+    #heading h5{
+        font-size: 3vw;
+        margin-top: 1.2vh;
+    }
+    .boudelem{
+        font-size: 4vw;
+    }
+    #min{
+        display: none !important;
+    }
+    #home-footer{
+        padding-bottom: 4vh;
+    }
+    #menu{
+        padding: 0;
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 60vh;
+    }
+    #about{
+        padding: 2vw;
+        padding-left: 0;
+        flex-direction: column;
+    }
+    #imgabout img{
+        height: 50vw;
+        width: 50vw;
+    }
+    #textabout{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 3.5vw;
+    }
+    #textabout h5{
+        text-align: center;
+    }
+    #textabout p{
+        text-align:justify;
+    }
+    #subscribe{
+        margin-top: 6vh;
+    }
+    #subscribe h5{
+        font-size: 3vw;
+    }
+    #subscribe h3{
+        font-size: 4vw;
+    }
+    #foter{
+        flex-direction: column;
+        margin-top: 4vh;
+        gap: 1vw;
+        line-height:1.2;
+        font-size:3vw;
+        padding-bottom: 4vh;
+    }
 }
